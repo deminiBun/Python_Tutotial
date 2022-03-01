@@ -127,3 +127,131 @@ print(type(num))
 # 5. Set Types:	set, frozenset
 # 6. Boolean Type: bool
 # 7. Binary Types: bytes, bytearray, memoryview
+
+#############################################################################
+
+#convert from int to float:
+x = float(1)
+
+#convert from float to int:
+y = int(2.8)
+
+#convert from int to complex:
+z = complex(x)
+
+print(x)
+print(y)
+print(z)
+print()
+print(type(x))
+print(type(y))
+print(type(z))
+print()
+
+#############################################################################
+
+#import random module and display a random number between 1-9
+import random
+print(random.randrange(1, 10))
+print()
+
+#############################################################################
+
+int1 = int(2.8)
+int2 = int("3")
+fl1 = float(1)
+fl2 = float("4.2")
+fl3 = float("3")
+st1 = str("s1")
+st2 = str(2)
+st3 = str(3.0)
+print(int1, int2, fl1, fl2, fl3, st1,st2,st3)
+print()
+
+#############################################################################
+
+# String can be surrounded by "" or ''
+# both will print the same output
+print("hello")  
+print('hello')
+
+#############################################################################
+
+# Multiline string
+a = """Lorem ipsum dolor sit amet,
+consectetur adipiscing elit,
+sed do eiusmod tempor incididunt
+ut labore et dolore magna aliqua."""
+print(a)
+print()
+
+#############################################################################
+
+# Strings are arrays
+a = "Hello World"
+print(a[1])
+print(a[4])
+print()
+
+#############################################################################
+
+# Loop through a string
+for x in "banana":
+    print(x)
+
+#############################################################################
+
+# String length
+hey = "Whatsupp"
+print(len(hey))
+
+#############################################################################
+
+# Check string
+txt = "The best things in life are free"
+print("free" in txt)  #in represents certain phrase or char is present in a string
+print()
+
+#use if statement
+txt = "The best things in life are free"
+if "freed" in txt:
+    print("'free' is present.") 
+    print()  #nothing prints out since freed DNE
+
+#print only if "expensive" is NOT present
+txt = "The best things in life are free"
+if "expensive" not in txt:
+    print("'expensive' is NOT present.") 
+    print() 
+
+#############################################################################
+
+# Slicing: return range of chars using slice syntax
+# Return chars from position 2 to 5(exclude)
+test = "Hello, world"
+print(test[2:5])
+print()
+
+#Get the chars from the start to pos 5(excluded)
+print(test[:5])
+print()
+
+#Get the chars from pos 2 onwards
+print(test[2:])
+print()
+
+# Negative Indexing : Start from the end of the string
+print(test[-5:-2])
+print()
+
+#############################################################################
+
+# Uppercase 
+print(test.upper())
+# LowerCase
+print(test.lower())
+# Remove whitespace from beginning or the end
+test1 = "   Hello    world    "
+print(test1.strip())
+# Splits the string into substring if it finds instances of separator
+print(test.split(",")) # returns ['Hello', ' world']
